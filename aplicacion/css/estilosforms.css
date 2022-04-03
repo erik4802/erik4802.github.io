@@ -1,0 +1,18 @@
+form {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input, textarea{
+    width: 98%;
+    height: 30px;
+    border-radius: 40px;
+    border: 1px solid rgb(190,188, 188);
+    padding: 5px;
+    margin: 5px;
+}
+label, legend{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding: 10px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="iso-8859-1">
+<meta name="description" content="Ejemplo de HTML5">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<title>Este texto es el título del documento</title>
+<link rel="stylesheet" href="css/estilos1.css">
+<link rel="stylesheet" href="css/estilosforms.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="agrupar">
+    <header id="cabecera">
+        <div id="logo">
+            <span class="logotexto1">HISTORIA DE LAS </span> <span class="logotexto2"> GENERACIONES DE LAS
+                COMPUTADORAS</span>
+        </div>
+    
+
+</header>
+<nav class="navegacion">
+    <ul class="menu">
+             <li class="first-item">
+            <a href ="index1.html">
+            <img src="img/home.jpg"alt="" class="imagen">
+            <span class="text-item">inicio</span>
+            <span class="down-item"></span>
+        </a>
+    </li>
+    <li>
+            <a href ="conoce mas.html">
+            <img src="img/us.jpg" alt="" class="imagen">
+            <span class="text-item">conoce mas</span>
+            <span class="down-item"></span>
+        </a>
+    </li>
+    <li>
+            <a href ="precursores.html">
+            <img src="img/home.jpg" alt="" class="imagen">
+            <span class="text-item">precursores</span>
+            <span class="down-item"></span>
+        </a>
+    </li> 
+    <li> 
+            <a href ="videos.html">
+            <img src="img/home.jpg" alt="" class="imagen">
+            <span class="text-item">video</span>
+            <span class="down-item"></span>
+        </a>
+    </li>
+    <li>
+            <a href ="fotos.html">
+            <img src="img/home.jpg" alt="" class="imagen">
+            <span class="text-item">fotos</span>
+            <span class="down-item"></span>
+        </a>
+    </li>
+    
+    <li>
+            <a href ="contactos.html">
+            <img src="img/contacto.jpg" alt="" class="imagen">
+            <span class="text-item">contactos</span>
+            <span class="down-item"></span>
+        </a>
+    </li>
+    </ul>
+    </nav>
+    <div class="container">
+        <div class="heading">video gallery</div>
+        <div class="video-container">
+            <div class="video">
+                <video src="video/quinta generacion de las computadoras(360P).mp4"></video>
+            </div>
+            <h6 class="title">QUINTA GENERACION: La inteligencia artificial es el campo de estudio que trata de aplicar los procesos del pensamiento humano usados 
+                en la solucion de problemas a la computadora.</h6>
+        <div class="video">
+            <video src="video/SEGUNDA GENERACION de COMPUTADORAS(360P).mp4"></video>
+        </div>
+        <h6 class="title">SEGUNDA GENERACION DE COMPUTADORAS:las computadoras ya no son de valvulas al vacio si no con transistores
+            son mas pequeñas y consumen menos electricidad que las anteriores, la comunicacion de estas computadoras es mas avanzado, y reciben el nombre
+            de lenguaje de alto nivel o programacion.
+        </h6>   
+        <div class="video">
+            <video src="video/videos/Generaciones de las Computadoras(480P).mp4"></video>
+    </div>
+    <h6 class="title">HISTORIA DE LAS GENERACIONES DE LAS COMPUTADORAS: en este video con describe las caracterizticas de cada
+        generacion, cuando fue su inicio.
+    </h6>
+        <div class="video">
+            <video src="video/videos/Historia de la computadora (generaciones)(480P).mp4"></video>
+        </div>
+        <h6 class="title">HISTORIA DE LA COMPUTADORA:La historia de la computadora tiene largos antecedentes, que se remontan a las primeras reglas de calculo y a las primeras maquinas diseñadas para facilitarle al ser humano la tarea de la aritmetica. También hubo inventos muy posteriores, como la maquina de Blaise Pascal, 
+            conocida como Maquina de Pascal o Pascalina, creada en 1642. Consistía en una serie de engranajes que permitian realizar operaciones aritmeticas. Esta máquina fue mejorada por Gottfried Leibinitz en 1671 y se dio inicio a la historia de las calculadoras.
+            </h6>
+
+        <div class="video">
+            <video src="video/3ra generacion de las computadoras(360P).mp4" ></video>
+        </div>
+        <h6 class="title">TERCERA GENERACION DE COMPUTADORAS: La tercera generación de computadoras abarcó un período entre 1964 y 1971. Marcó una nueva era que se definió por el perfeccionamiento de los C.I., es decir, los circuitos integrados creados desde 1958, que son unos chips o pastillas de silicio, que permiten la colocación de enormes cantidades de dispositivos electrónicos en un mínimo espacio, 
+            logrando disminuir nuevamente el tamaño de las computadora e incorporando la multiprogramación. Su uso revolucionó la forma de componer computadoras, vigente hasta hoy en día en la fabricación de celulares, calculadoras.</h6>
+        <div class="video">
+            <video src="video/quinta generacion de las computadoras(360P).mp4" ></video>
+        </div>
+        <h6 class="title">QUINTA GENERACION DE COMPUTADORAS:
+        esta formada por maquinas llamadas inteligencia artificial,
+            estas se tratan de computadoras dotadas de inteligencia implementada y sus componentes y su sistema fisico o mas conocido 
+            como hardware. 
+        </h6>
+    <script>
+        var video=document.querySelectorAll('video')
+        video.forEach(play =>play.addEventListener('click', ()=>{
+            play.classList.toggle('active');
+            if (play.paused){
+                play.play();
+            }else{
+                play.pause();
+                play.currentTime =0;
+            }
+        }));
+    </script>
+    </body>
+    </html>  
+        
